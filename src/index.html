@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de partidas Rankeadas</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Calculadora de partidas Rankeadas</h1>
+
+    </header>
+
+    <div id="Partidas">
+        <label for="vitorias">Quantas vitorias você tem:</label>
+        <input type="number" id="vitorias" placeholder="Quantas vitorias você tem" required min="0"> <br><br>
+
+        <div class="derrotas">
+            <label for="derrotas">Quantas derrrotas você tem:</label>
+            <input type="number" id="derrotas" placeholder="Quantas derrrotas você tem:" required min="0"><br><br>
+        </div>
+
+        <button class="calcular" onclick="calcular()">Calcular Ranking do herói</button>
+
+    </div>
+
+    <div>
+
+        <h3 id="resultado"></h3>
+
+    </div>
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
